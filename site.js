@@ -7,7 +7,7 @@
     document.querySelectorAll('.pc').forEach(function(p){p.hidden=!(k==='alle'||p.getAttribute('data-k')===k)});
   })});
   document.querySelectorAll('.copy').forEach(function(b){b.addEventListener('click',function(){
-    var box=b.closest('.pc,.qrow,.ai');var e=box.querySelector('.pr,.qt');var t=e.textContent;
+    var box=b.closest('.pc,.qrow,.ai');var e=box&&box.querySelector('.pr,.qt');if(!e)return;var t=e.textContent;
     var done=function(){var o=b.textContent;b.textContent='Kopiert ✓';setTimeout(function(){b.textContent=o},1600)};
     if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t).then(done,function(){})}
     else{var a=document.createElement('textarea');a.value=t;document.body.appendChild(a);a.select();try{document.execCommand('copy');done()}catch(e){}document.body.removeChild(a)}

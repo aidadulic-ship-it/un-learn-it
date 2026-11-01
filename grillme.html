@@ -1,48 +1,51 @@
 <!doctype html>
 <html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>/grillme – UN-LEARN IT</title><meta name="description" content="Vier fiktive KI-Perspektiven prüfen deine Meinung: Sophie, Markus, Lea und Tim.">
-<meta name="theme-color" content="#070e22"><link rel="stylesheet" href="site.css"></head><body>
+<title>/grillme – UN-LEARN IT</title><meta name="description" content="Vier fiktive KI-Perspektiven prüfen deine Meinung: Sophie, Markus, Lea und Tim. Mit deiner eigenen KI.">
+<meta name="theme-color" content="#070e22"><meta name="referrer" content="strict-origin-when-cross-origin"><meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; media-src 'self'; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'self'">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="website"><meta property="og:locale" content="de_AT"><meta property="og:site_name" content="UN-LEARN IT"><meta property="og:title" content="/grillme – UN-LEARN IT"><meta property="og:description" content="Vier fiktive KI-Perspektiven prüfen deine Meinung: Sophie, Markus, Lea und Tim. Mit deiner eigenen KI.">
+<link rel="stylesheet" href="site.css"></head><body>
 <a class="skip" href="#main">Zum Inhalt</a>
 <header class="hdr"><div class="wrap in"><a class="brand" href="index.html"><span class="mark" aria-hidden="true"><i></i><i></i></span>UN-LEARN IT</a>
 <nav class="nav" aria-label="Hauptmenü"><a href="index.html">Start</a><a href="seminar.html">Seminar</a><a href="ablauf.html" aria-current="page">Workshop</a><a href="material.html">Material</a></nav><a class="btn" href="seminar.html">Seminar ansehen</a></div></header><nav class="subnav" aria-label="Unterseiten"><div class="wrap"><a href="ablauf.html">Ablauf</a><a href="uebungen.html">Übungen</a><a href="figuren.html">KI-Figuren</a><a href="grillme.html" aria-current="page">/grillme</a><a href="meinungs-papier.html">Meinungs-Papier</a></div></nav><a class="fab" href="seminar.html">Seminar ansehen</a>
 
-<main id="main"><section class="phead"><div class="wrap"><p class="eyebrow">Meinung testen</p><h1 class="big">/grillme<span style="color:var(--mag)">.</span></h1><p>Sag deine Meinung und lass sie gleichzeitig von vier Seiten prüfen: Begründung, Aufwand, Fairness, Alltag. Alle vier sind fiktive KI-Figuren, keine echten Personen und keine Stimme einer Gruppe.</p></div></section>
+<main id="main"><section class="phead"><div class="wrap"><p class="eyebrow">Meinung testen</p><h1 class="big">/grillme<span style="color:var(--mag)">.</span></h1><p>Schreibe deine Meinung und erhalte vier fertige Prompts: Begründung, Aufwand, Fairness, Alltag. Du kopierst sie in deine eigene KI (zum Beispiel ChatGPT, Claude oder Gemini). Alle vier Figuren sind fiktiv, keine echten Personen und keine Stimme einer Gruppe.</p></div></section>
 <section class="sec dark gsec"><div class="wrap">
-<p class="gnote"><b>Vor dem Absenden:</b> Keine echten Personen, Namen, Gesundheitsdaten oder vertraulichen Informationen eingeben. Der Text geht an einen KI-Dienst. Die vier Antworten sind unabhängig und dürfen sich widersprechen. Du entscheidest selbst, was du davon behältst. Keine Beratung zu Gesundheit, Recht oder Geld.</p>
-<p class="gnote demo" id="gm-demo" hidden><b>Demo-Modus:</b> Der Server ist noch nicht verbunden. Du siehst vorgeschriebene Beispielantworten, keine KI. Sie zeigen den Ablauf mit Ladezustand, Fehlern und Folgefragen.</p>
-<form id="gm-form" class="gbar" autocomplete="off"><label for="gm-input" class="sr">Befehl</label><span class="gcmd">/grillme</span><input id="gm-input" type="text" placeholder="Schreibe /grillme und deine Meinung, Annahme oder Frage …"><button id="gm-mic" class="gmic" type="button" aria-pressed="false" aria-label="Meinung einsprechen" title="Sprechen"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M12 15a4 4 0 0 0 4-4V6a4 4 0 0 0-8 0v5a4 4 0 0 0 4 4zm6-4a6 6 0 0 1-12 0H4a8 8 0 0 0 7 7.93V22h2v-3.07A8 8 0 0 0 20 11z"/></svg></button><button id="gm-send" class="btn" type="submit">AN ALLE SENDEN</button></form>
+<p class="gnote"><b>So geht es:</b> 1. Meinung eintippen oder einsprechen. 2. Bei einer Figur auf „Prompt kopieren“ tippen. 3. In deiner eigenen KI einen <b>neuen Chat</b> öffnen und einfügen. Nimm für jede Figur einen eigenen Chat, damit die vier unabhängig bleiben und sich widersprechen dürfen.</p>
+<p class="gnote"><b>Datenschutz:</b> Deine Meinung bleibt in deinem Browser und geht nicht an diese Seite. Erst wenn du den Prompt in einen KI-Dienst einfügst, gelten dessen Bedingungen. Gib dort keine echten Personen, Namen, Gesundheitsdaten oder vertraulichen Informationen ein. Keine Beratung zu Gesundheit, Recht oder Geld.</p>
+<form id="gm-form" class="gbar" autocomplete="off"><label for="gm-input" class="sr">Deine Meinung</label><span class="gcmd">Meine Meinung</span><input id="gm-input" type="text" maxlength="1200" placeholder="Schreibe deine Meinung, Annahme oder Frage …"><button id="gm-mic" class="gmic" type="button" aria-pressed="false" aria-label="Meinung einsprechen" title="Sprechen"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M12 15a4 4 0 0 0 4-4V6a4 4 0 0 0-8 0v5a4 4 0 0 0 4 4zm6-4a6 6 0 0 1-12 0H4a8 8 0 0 0 7 7.93V22h2v-3.07A8 8 0 0 0 20 11z"/></svg></button><button id="gm-send" class="btn" type="submit">PROMPTS BAUEN</button></form>
 <div class="gexs"><span>Beispiele:</span><button type="button" class="gex" data-t="Homeoffice macht Teams produktiver.">Homeoffice macht Teams produktiver.</button><button type="button" class="gex" data-t="Kinder brauchen vor 14 kein eigenes Smartphone.">Kinder brauchen vor 14 kein eigenes Smartphone.</button><button type="button" class="gex" data-t="Wer nichts zu verbergen hat, braucht keinen Datenschutz.">Wer nichts zu verbergen hat, braucht keinen Datenschutz.</button></div>
-<p id="gm-msg" class="gmsg" role="status"></p><p id="gm-stmt" class="gstmt" hidden></p><p id="gm-round" class="ground" hidden></p>
+<p id="gm-msg" class="gmsg" role="status"></p><p id="gm-stmt" class="gstmt" hidden></p>
 <div class="gcards"><article class="gcard" data-id="sophie" data-state="idle" style="--ac:#f06cb4">
-<div class="gph"><img src="sophie.jpg" alt="Sophie, fiktive KI-Figur" loading="lazy"><span class="gchip">STRATEGISCHE PRÜFERIN</span></div>
-<div class="gin"><h3>Sophie</h3><p class="gtag">Fiktive KI-Perspektive</p>
-<div class="gbody" aria-live="polite"><p class="gidle">Prüft Begründung und Gegenposition deiner Meinung.</p></div>
-<p class="gstat" role="status"></p>
-<button type="button" class="gretry" hidden>Wiederholen</button>
-<form class="gfu" autocomplete="off"><input type="text" maxlength="1200" placeholder="Folgefrage an Sophie …" aria-label="Folgefrage an Sophie"><button type="button" class="gmic" aria-pressed="false" aria-label="Folgefrage einsprechen" title="Sprechen"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M12 15a4 4 0 0 0 4-4V6a4 4 0 0 0-8 0v5a4 4 0 0 0 4 4zm6-4a6 6 0 0 1-12 0H4a8 8 0 0 0 7 7.93V22h2v-3.07A8 8 0 0 0 20 11z"/></svg></button><button type="submit" disabled>Fragen</button></form></div></article><article class="gcard" data-id="markus" data-state="idle" style="--ac:#e8ecf5">
-<div class="gph"><img src="markus.jpg" alt="Markus, fiktive KI-Figur" loading="lazy"><span class="gchip">PRAGMATISCHER PRÜFER</span></div>
-<div class="gin"><h3>Markus</h3><p class="gtag">Fiktive KI-Perspektive</p>
-<div class="gbody" aria-live="polite"><p class="gidle">Prüft Aufwand, Zuständigkeit und Nutzen, wenn man nach der Meinung handelt.</p></div>
-<p class="gstat" role="status"></p>
-<button type="button" class="gretry" hidden>Wiederholen</button>
-<form class="gfu" autocomplete="off"><input type="text" maxlength="1200" placeholder="Folgefrage an Markus …" aria-label="Folgefrage an Markus"><button type="button" class="gmic" aria-pressed="false" aria-label="Folgefrage einsprechen" title="Sprechen"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M12 15a4 4 0 0 0 4-4V6a4 4 0 0 0-8 0v5a4 4 0 0 0 4 4zm6-4a6 6 0 0 1-12 0H4a8 8 0 0 0 7 7.93V22h2v-3.07A8 8 0 0 0 20 11z"/></svg></button><button type="submit" disabled>Fragen</button></form></div></article><article class="gcard" data-id="lea" data-state="idle" style="--ac:#00adb5">
-<div class="gph"><img src="lea.jpg" alt="Lea, fiktive KI-Figur" loading="lazy"><span class="gchip">FAIRNESS-BLICK</span></div>
-<div class="gin"><h3>Lea</h3><p class="gtag">Fiktive KI-Perspektive</p>
-<div class="gbody" aria-live="polite"><p class="gidle">Macht sichtbar, wer von deiner Meinung betroffen ist.</p></div>
-<p class="gstat" role="status"></p>
-<button type="button" class="gretry" hidden>Wiederholen</button>
-<form class="gfu" autocomplete="off"><input type="text" maxlength="1200" placeholder="Folgefrage an Lea …" aria-label="Folgefrage an Lea"><button type="button" class="gmic" aria-pressed="false" aria-label="Folgefrage einsprechen" title="Sprechen"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M12 15a4 4 0 0 0 4-4V6a4 4 0 0 0-8 0v5a4 4 0 0 0 4 4zm6-4a6 6 0 0 1-12 0H4a8 8 0 0 0 7 7.93V22h2v-3.07A8 8 0 0 0 20 11z"/></svg></button><button type="submit" disabled>Fragen</button></form></div></article><article class="gcard" data-id="tim" data-state="idle" style="--ac:#ffff00">
-<div class="gph"><img src="tim.jpg" alt="Tim, fiktive KI-Figur" loading="lazy"><span class="gchip">ALLTAGS-BLICK</span></div>
-<div class="gin"><h3>Tim</h3><p class="gtag">Fiktive KI-Perspektive</p>
-<div class="gbody" aria-live="polite"><p class="gidle">Übersetzt deine Meinung in den Alltag und einen kleinen Test.</p></div>
-<p class="gstat" role="status"></p>
-<button type="button" class="gretry" hidden>Wiederholen</button>
-<form class="gfu" autocomplete="off"><input type="text" maxlength="1200" placeholder="Folgefrage an Tim …" aria-label="Folgefrage an Tim"><button type="button" class="gmic" aria-pressed="false" aria-label="Folgefrage einsprechen" title="Sprechen"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M12 15a4 4 0 0 0 4-4V6a4 4 0 0 0-8 0v5a4 4 0 0 0 4 4zm6-4a6 6 0 0 1-12 0H4a8 8 0 0 0 7 7.93V22h2v-3.07A8 8 0 0 0 20 11z"/></svg></button><button type="submit" disabled>Fragen</button></form></div></article></div>
-<p class="gfoot"><button type="button" id="gm-all" class="btn ghost" disabled>Alle vier erneut challengen</button></p>
-<p class="gnote small"><b>Spracheingabe:</b> Tippe auf das Mikrofon und sprich. Der erkannte Text erscheint im Feld und wird erst nach deinem Absenden verwendet. Die Spracherkennung übernimmt dein Browser; je nach Browser (z. B. Chrome, Edge, Safari) geht die Aufnahme dafür an dessen Anbieter.</p><p id="gm-nomic" class="gnote small" hidden>Dein Browser unterstützt keine Spracheingabe. Nutze Chrome, Edge oder Safari.</p>
-<p class="gnote small">Die Figuren antworten nur als Text. Eine Sprachausgabe oder Lippenbewegung gibt es hier nicht.</p>
+<div class="gph"><img src="sophie.jpg" alt="Sophie, fiktive KI-Figur" loading="lazy" width="360" height="360"><span class="gchip">STRATEGISCHE PRÜFERIN</span></div>
+<div class="gin"><h3 aria-level="2">Sophie</h3><p class="gtag">Fiktive KI-Perspektive</p>
+<div class="gbody"><p class="gidle">Prüft Begründung und Gegenposition deiner Meinung.</p></div>
+<button type="button" class="gcopy btn" disabled>Prompt kopieren</button>
+<details class="gview"><summary>Prompt ansehen</summary><pre class="gpre" tabindex="0"></pre></details>
+<p class="gstat" role="status" aria-live="polite"></p></div></article><article class="gcard" data-id="markus" data-state="idle" style="--ac:#e8ecf5">
+<div class="gph"><img src="markus.jpg" alt="Markus, fiktive KI-Figur" loading="lazy" width="360" height="360"><span class="gchip">PRAGMATISCHER PRÜFER</span></div>
+<div class="gin"><h3 aria-level="2">Markus</h3><p class="gtag">Fiktive KI-Perspektive</p>
+<div class="gbody"><p class="gidle">Prüft Aufwand, Zuständigkeit und Nutzen, wenn man nach der Meinung handelt.</p></div>
+<button type="button" class="gcopy btn" disabled>Prompt kopieren</button>
+<details class="gview"><summary>Prompt ansehen</summary><pre class="gpre" tabindex="0"></pre></details>
+<p class="gstat" role="status" aria-live="polite"></p></div></article><article class="gcard" data-id="lea" data-state="idle" style="--ac:#00adb5">
+<div class="gph"><img src="lea.jpg" alt="Lea, fiktive KI-Figur" loading="lazy" width="360" height="360"><span class="gchip">FAIRNESS-BLICK</span></div>
+<div class="gin"><h3 aria-level="2">Lea</h3><p class="gtag">Fiktive KI-Perspektive</p>
+<div class="gbody"><p class="gidle">Macht sichtbar, wer von deiner Meinung betroffen ist.</p></div>
+<button type="button" class="gcopy btn" disabled>Prompt kopieren</button>
+<details class="gview"><summary>Prompt ansehen</summary><pre class="gpre" tabindex="0"></pre></details>
+<p class="gstat" role="status" aria-live="polite"></p></div></article><article class="gcard" data-id="tim" data-state="idle" style="--ac:#ffff00">
+<div class="gph"><img src="tim.jpg" alt="Tim, fiktive KI-Figur" loading="lazy" width="360" height="360"><span class="gchip">ALLTAGS-BLICK</span></div>
+<div class="gin"><h3 aria-level="2">Tim</h3><p class="gtag">Fiktive KI-Perspektive</p>
+<div class="gbody"><p class="gidle">Übersetzt deine Meinung in den Alltag und einen kleinen Test.</p></div>
+<button type="button" class="gcopy btn" disabled>Prompt kopieren</button>
+<details class="gview"><summary>Prompt ansehen</summary><pre class="gpre" tabindex="0"></pre></details>
+<p class="gstat" role="status" aria-live="polite"></p></div></article></div>
+<p class="gopen">KI öffnen: <a href="https://chatgpt.com/" target="_blank" rel="noopener noreferrer">ChatGPT</a> · <a href="https://claude.ai/new" target="_blank" rel="noopener noreferrer">Claude</a> · <a href="https://gemini.google.com/" target="_blank" rel="noopener noreferrer">Gemini</a></p>
+<p class="gnote small"><b>Spracheingabe:</b> Tippe auf das Mikrofon und sprich. Der erkannte Text erscheint im Feld. Die Spracherkennung übernimmt dein Browser; je nach Browser (z. B. Chrome, Edge, Safari) geht die Aufnahme dafür an dessen Anbieter.</p><p id="gm-nomic" class="gnote small" hidden>Dein Browser unterstützt keine Spracheingabe. Nutze Chrome, Edge oder Safari.</p>
+<p class="gnote small">Die Figuren antworten nur als Text. Sie sind Impulse, keine Urteile. Du entscheidest selbst, was du behältst.</p>
 </div></section></main>
 <footer class="ftr"><div class="wrap in"><span>© UN-LEARN IT · Alle Rechte vorbehalten</span>
 <span><a href="index.html">Start</a><a href="uebungen.html">Übungen</a><a href="prompts.html">Prompts</a><a href="themen.html">Themen</a></span>
-<span>Keine Konten, keine Tracker. Texte gehen nur bei /grillme an einen KI-Dienst.</span></div></footer>
-<script src="site.js"></script><script src="grillme-config.js"></script><script src="grillme.js"></script></body></html>
+<span>Keine Konten, keine Tracker. Deine Eingaben bleiben in deinem Browser.</span></div></footer>
+<script src="site.js"></script><script src="grillme-prompts.js"></script><script src="grillme.js"></script></body></html>
