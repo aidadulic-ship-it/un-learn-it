@@ -292,3 +292,5 @@ pre.pr{margin:0;white-space:pre-wrap;word-wrap:break-word;font-family:"IBM Plex 
 /* brand-mobile-fix */@media(max-width:480px){.brand{font-size:15px;gap:8px}.brand .mark{transform:scale(.85)}}
 
 /* hero-fix3 */.hero h1.big{font-size:clamp(44px,6.4vw,100px);hyphens:manual}.why h2.big{font-size:clamp(34px,5.2vw,72px);hyphens:manual}
+
+.song .player{margin:26px 0 0}.song audio{width:100%;max-width:560px;display:block}.song figcaption{margin-top:10px;font-size:14px;color:rgba(255,255,255,.7)}
